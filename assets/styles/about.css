@@ -1,0 +1,100 @@
+#about-page {
+  width: 100%;
+  margin-top: -5%;
+}
+
+.wrapper {
+  width: 50%;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header .title {
+  font-size: 29.1px;
+  text-transform: uppercase;
+}
+
+.header a {
+  color: var(--colorWhite);
+  
+  padding: .6rem;
+  border-radius: 6px;
+
+  transition: background .3s;
+}
+
+.header a.back-button {
+  background-color: var(--colorButtonSecondaryLighter);
+}
+
+.header a.back-button:hover {
+  background-color: var(--colorButtonSecondaryDarker);
+}
+
+.header a.play-button {
+  background-color: var(--colorButtonPrimaryLighter);
+}
+
+.header a.play-button:hover {
+  background-color: var(--colorButtonPrimaryDarker);
+}
+
+@media (max-width: 1500px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 70%;
+  }
+
+  .header .title {
+    font-size: 27px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .header .title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 730px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .header .title {
+    font-size: 23px;
+  }
+
+  .header a {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 530px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .header .title {
+    font-size: 20px;
+  }
+
+  .header a {
+    font-size: 80%;
+  }
+}

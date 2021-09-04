@@ -1,0 +1,38 @@
+#index-page {
+  margin-top: -5%;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.buttons-container {
+  gap: 1rem;
+}
+
+.buttons-container a {
+  padding: 1rem 5rem;
+  border-radius: 4px;
+
+  color: var(--colorBackgroundPrimary);
+  text-transform: uppercase;
+
+  transition: background .3s;
+}
+
+.buttons-container a.play-button {
+  background-color: var(--colorButtonPrimaryLighter);
+}
+
+.buttons-container a.play-button:hover {
+  background-color: var(--colorButtonPrimaryDarker);
+}
+
+.buttons-container a.about-button {
+  background-color: var(--colorButtonSecondaryLighter);
+}
+
+.buttons-container a.about-button:hover {
+  background-color: var(--colorButtonSecondaryDarker);
+}
