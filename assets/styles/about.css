@@ -41,6 +41,19 @@
   background-color: var(--colorButtonPrimaryDarker);
 }
 
+.about-content p+p {
+  margin-top: .3rem;
+}
+
+.about-content a {
+  color: var(--colorButtonPrimaryLighter);
+  transition: color .2s;
+}
+
+.about-content a:hover {
+  color: var(--colorButtonPrimaryDarker);
+}
+
 @media (max-width: 1500px) {
   .wrapper {
     width: 60%;

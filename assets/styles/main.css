@@ -2,6 +2,7 @@ html {
   --colorWhite: #fff;
 
   --colorBackgroundPrimary: #252333;
+  --colorBackgroundSecondary: #1d1b27;
   --colorTextPrimary: #e8e9f3;
   --colorTextSecondary: #d8d9e7;
 
@@ -34,7 +35,6 @@ body {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 a {

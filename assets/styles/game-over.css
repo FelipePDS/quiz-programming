@@ -1,0 +1,43 @@
+#game-over-page {
+  margin: -5% .5rem 0 .5rem !important;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+
+  animation: game-over .8s ease infinite;
+}
+
+@keyframes game-over {
+  0% {
+    transform: scale(.94);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(.94);
+  }
+}
+
+.game-over-content {
+  gap: 1rem;
+}
+
+.game-over-content a {
+  padding: .85rem 3.5rem;
+  border-radius: 4px;
+
+  background-color: var(--colorButtonPrimaryLighter);
+  color: var(--colorBackgroundPrimary);
+  text-transform: uppercase;
+
+  transition: background .3s;
+}
+
+.game-over-content a:hover {
+  background-color: var(--colorButtonPrimaryDarker);
+}
