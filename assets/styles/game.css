@@ -1,3 +1,11 @@
+@media (max-width: 800px) {
+  body {
+    height: 100% !important;
+    margin: 1.5rem 0 !important;
+    overflow-y: scroll;
+  }
+}
+
 #game-page {
   width: 40rem;
   max-width: 90%;
@@ -24,6 +32,7 @@
 }
 
 .alternatives-container {
+  margin-bottom: 3rem;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -33,16 +42,32 @@
 }
 
 .alternatives-container .alternative .alternative-content {
+  width: 100%;
+  height: 120px;
   gap: .5rem;
-  padding: .85rem 2rem;
-  border-radius: 4px;
+  padding: .85rem 1.5rem;
+  font-size: 18px;
+  border-radius: 4px; 
 
   background-color: var(--colorBackgroundSecondary);
   opacity: .85;
 
   cursor: pointer;
 
+  overflow-y: scroll;
+  overflow-x: hidden;
+
   transition: opacity .25s;
+}
+
+@media (min-width: 370px) {
+  .alternatives-container .alternative .alternative-content {
+    min-width: 333px;
+  }
+}
+
+.alternatives-container .alternative .alternative-content::-webkit-scrollbar {
+  display: none;
 }
 
 .alternatives-container .alternative .alternative-content:hover {
@@ -62,4 +87,111 @@
 
 .alternatives-container .alternative .alternative-content p {
   color: var(--colorTextSecondary);
+  height: 50%;
+}
+
+.user-score-container {
+  width: 100%;
+}
+
+.user-score-container .user-score-value {
+  color: var(--colorTextSecondary);
+  font-size: 18px;
+}
+
+.user-score-container .user-score-value b {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .alternatives-container .alternative {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .alternatives-container .alternative {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .alternatives-container .alternative {
+    width: 90%;
+  }
+}
+
+.final-score-window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+  height: 100%;
+  padding: .5rem;
+
+  background-color: var(--colorBackgroundMask);
+}
+
+.final-score-window .final-score-container {
+  max-width: 533px;
+  padding: 2rem;
+  border-radius: 6px;
+
+  background-color: var(--colorBackgroundPrimary);
+
+  animation: display-final-score .2s ease;
+}
+
+@keyframes display-final-score {
+  from {
+    transform: scale(.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.final-score-window .final-score-container .title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  animation: final-score-status .8s ease infinite;
+}
+
+@keyframes final-score-status {
+  0% {
+    transform: scale(.94);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(.94);
+  }
+}
+
+.final-score-window .final-score-container .final-score-content {
+  gap: 1rem;
+}
+
+.final-score-window .final-score-container .final-score-content a {
+  padding: .75rem 3rem;
+  border-radius: 4px;
+
+  background-color: var(--colorButtonPrimaryLighter);
+  color: var(--colorBackgroundPrimary);
+  text-transform: uppercase;
+
+  transition: background .3s;
+}
+
+.final-score-window .final-score-container .final-score-content a:hover {
+  background-color: var(--colorButtonPrimaryDarker);
 }

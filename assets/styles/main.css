@@ -1,8 +1,20 @@
+::-webkit-scrollbar {
+  background-color: #202324;
+  color: #aba499;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+
 html {
   --colorWhite: #fff;
 
   --colorBackgroundPrimary: #252333;
   --colorBackgroundSecondary: #1d1b27;
+  --colorBackgroundMask: rgba(0, 0, 0, 0.5);
   --colorTextPrimary: #e8e9f3;
   --colorTextSecondary: #d8d9e7;
 
@@ -20,14 +32,14 @@ body {
   justify-content: center;
   flex-direction: column;
   
+  height: 100vh;
+  
   color: var(--colorTextPrimary);
   background-color: var(--colorBackgroundPrimary);
 }
 
 html,
 body {
-  height: 100vh;
-
   font-family: 'Overpass', sans-serif;
   user-select: none;
 }
@@ -35,6 +47,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -45,6 +58,12 @@ a {
 	display: flex;
 	justify-content: initial !important;
 	align-items: flex-start !important;
+}
+
+.end {
+	display: flex;
+	justify-content: flex-end !important;
+	align-items: flex-end !important;
 }
 
 .center {
