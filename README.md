@@ -10,6 +10,10 @@ Play Now :point_right: <kbd><a href="https://felipepds.github.io/quiz-programmin
 
 🎮 Programming quiz done for the PAW class (Applied Programming for the Web)
 
+## :computer: Techs
+
+This quiz was made in HTML, CSS and Javascript with "module type" to export data.
+
 <h2 align="center">:bust_in_silhouette: Author</h2>
 
 <p align="center">:pencil: by <a href="https://felipepds.github.io//">FelipePDS</a></p>
